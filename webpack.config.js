@@ -1,4 +1,5 @@
 var path = require('path');
+var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -10,6 +11,10 @@ module.exports = {
     filename: 'bundle.js'
   },
   plugins: [
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
+    }),
     new HtmlWebpackPlugin({
       title: 'Random Quote Generator',
       template: './src/index.html'
