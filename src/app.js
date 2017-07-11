@@ -1,4 +1,4 @@
-const css = require('./style.css');
+import css from './style.css';
 
 const quotes = [
   {text: "If you are distressed by anything external, the pain is not due to the thing itself, but to your estimate of it; and this you have the power to revoke at any moment.", author: "Marcus Aurelius"},
