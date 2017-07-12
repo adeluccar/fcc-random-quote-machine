@@ -2,21 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="normalize.css" media="all">
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
-
-    <div class="vertical-container">
-
-      <article class="card">
-        <blockquote class="card__quote"></blockquote>
-        <div class="card__author"></div>
-        <button id="random-quote" class="card__button-random">Random Quote</button>
-        <a id="tweet-quote" class="card__button-tweet twitter-share-button" target="_blank" href="#">Tweet the Quote</a>
-      </article>
-
-    </div>
-    <script src="twitter.js"></script>
+    <section class="hero is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <div class="card">
+            <div class="card-content">
+              <p id="card__quote" class="title"> </p>
+              <p id="card__author" class="subtitle"> </p>
+            </div>
+            <footer class="card-footer">
+              <a id="random-quote" class="card-footer-item">Random Quote</a>
+              <a id="tweet-quote" class="card-footer-item" target="_blank">Tweet Quote</a>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

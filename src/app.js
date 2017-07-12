@@ -1,5 +1,4 @@
 import '../node_modules/bulma/css/bulma.css'
-// import css from './style.css';
 
 const quotes = [
   {text: "If you are distressed by anything external, the pain is not due to the thing itself, but to your estimate of it; and this you have the power to revoke at any moment.", author: "Marcus Aurelius"},
@@ -18,14 +17,14 @@ function randomQuote (quotes) {
 
 function newQuote() {
   let quote = randomQuote(quotes);
-  $(".card__quote").html(quote.text);
-  $(".card__author").html(quote.author);
+  $("#card__quote").html(quote.text);
+  $("#card__author").html(quote.author);
   return quote;
 }
 
 function currentQuote(){
-  let quote_text = $(".card__quote").text();
-  let quote_author = $(".card__author").text();
+  let quote_text = $("#card__quote").text();
+  let quote_author = $("#card__author").text();
   let quote = {
     text: quote_text,
     author:quote_author
