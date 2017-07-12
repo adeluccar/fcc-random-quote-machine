@@ -35,7 +35,8 @@ function currentQuote(){
 function tweetQuote(quote) {
   let quote_text = quote.text;
   let quote_author = quote.author;
-  let quoteString = `"${quote_text}" by ${quote_author}`;
+  let quoteString = `"${quote_text}"
+—${quote_author}`;
   let encodedString = encodeURIComponent(quoteString);
   let quoteUrl = `https://twitter.com/intent/tweet?text=${encodedString}`;
   return quoteUrl;
