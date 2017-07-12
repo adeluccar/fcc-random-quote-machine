@@ -33,7 +33,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       title: 'Random Quote Generator',
-      template: './src/index.html'
+      template: './src/index.ejs'
     })
   ]
 }
