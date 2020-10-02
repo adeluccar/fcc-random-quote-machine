@@ -6,7 +6,7 @@ The app must fulfill these user stories:
 
 1. I can click a button to show me a new random quote.
 2. I can press a button to tweet out a quote.
-
+When the user presses Tweet quote button it automatically redirects to their twitter page and ask them to tweet the current quote.
 The app is built as part of [freeCodeCamp's Intermediate Front-End Projects](https://www.freecodecamp.com/challenges/build-a-random-quote-machine).
 View the result [here](https://adeluccar.github.io/fcc-random-quote-machine)
 
